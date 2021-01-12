@@ -1,3 +1,19 @@
+# Instalação
+
+Basta rodar os comandos abaixo:
+
+-   docker-compose build
+-   docker-compose up -d
+
+A API estará disponível através da URL http://127.0.0.1:4000
+
+# Utilização
+
+Para realizar consultas, basta realizar chamadas utilizando uma URL nos seguintes padrões:
+
+-   http://127.0.0.1:4000/21.070-620
+-   http://127.0.0.1:4000/21070620
+
 # Referências
 
 -   https://github.com/pacoogle/laravel-lumen-docker
@@ -30,4 +46,5 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
 # operand-php-cep-api
