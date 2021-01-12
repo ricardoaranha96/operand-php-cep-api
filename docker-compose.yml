@@ -1,0 +1,21 @@
+nginx:
+  build: nginx
+  command: nginx -g "daemon off;"
+  links:
+    - php
+  ports:
+    - "4000:80"
+php:
+  build: php
+  volumes:
+    - ./:/var/www
+  working_dir: /var/www/public
+  command: php-fpm
+  environment:
+    APP_ENV: local
+    APP_DEBUG: "true"
+    APP_KEY: SomeRandomKey!!!
+    APP_LOCALE: it
+    APP_FALLBACK_LOCALE: it
+    XDEBUG_CONFIG: remote_host=host.docker.internal
+    PHP_IDE_CONFIG: serverName=localhost
