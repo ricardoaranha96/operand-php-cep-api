@@ -5,6 +5,9 @@ Basta rodar os comandos abaixo:
 -   docker-compose build
 -   docker-compose up -d
 
+Acessar o terminal do container via: docker exec -it <idcontainer> bash
+Rodar o comando: composer install
+
 A API estará disponível através da URL http://127.0.0.1:4000
 
 # Utilização
